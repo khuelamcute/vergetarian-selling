@@ -5,6 +5,13 @@ import { useNavigate } from "react-router-dom"
 import Logo from "../../../assets/img/logo.png"
 import Hero2 from "../../../assets/img/hero-2.png"
 import { BiBasket, BiHeart, BiSearch, BiUser } from "react-icons/bi"
+import Leave from "../../../assets/img/leave.png"
+import Number1 from "../../../assets/img/number1.svg"
+import Number2 from "../../../assets/img/number2.svg"
+import Number3 from "../../../assets/img/number3.svg"
+import BackGroundNumber from "../../../assets/img/background_number.svg"
+import BackGroundNumberGreen from "../../../assets/img/background_number_green.svg"
+
 export default function Home() {
   const navigate = useNavigate()
   return (
@@ -43,8 +50,75 @@ export default function Home() {
           <BiBasket size={22} color={"#131A29"} className="mr-[114rem]" />
         </div>
       </div>
+      <div className="border-[1px]">
+        <img
+          className="h-[639rem] w-[100%] object-cover py-auto"
+          src={Hero2}
+          alt="logo"
+        ></img>
+      </div>
+      <div className="flex">
+        <img
+          src={Leave}
+          alt=" "
+          className="h-[412rem] w-[278rem] ml-[13rem] mt-[40rem]"
+        />
+        <div className="w-[100%] flex justify-between mr-[180rem]">
+          <div className="ml-[40rem] mt-[154rem] relative ">
+            <div className="absolute w-[198rem]">
+              <img src={BackGroundNumber} />
+            </div>
+            <div className="absolute w-[140rem] left-[25rem] h-[160rem] top-[-10rem]">
+              <img src={Number1} />
+            </div>
+            <p className="mt-[240rem] font-[700] text-[40rem] heading-[28rem] ml-[-20rem]">
+              Chọn bắt đầu
+            </p>
+            <p className="w-[360rem] text-center ml-[-70rem] mt-[-20rem]">
+              Choose from select produce to start. Keep, add, or remove items
+            </p>
+          </div>
+          <div className="ml-[40rem] mt-[154rem] relative ">
+            <div className="absolute w-[198rem]">
+              <img src={BackGroundNumberGreen} />
+            </div>
+            <div className="absolute w-[140rem] left-[25rem] h-[160rem] top-[-10rem]">
+              <img src={Number2} />
+            </div>
+            <p className="mt-[240rem] font-[700] text-[40rem] heading-[28rem] ml-[-20rem]">
+              Đi chợ online
+            </p>
+            <p className="w-[360rem] text-center ml-[-70rem] mt-[-20rem]">
+              Add in your grocery staples, snacks, and other favorite pantry
+              items every week.
+            </p>
+          </div>
+          <div className="ml-[40rem] mt-[154rem] relative">
+            <div className="absolute w-[198rem]">
+              <img src={BackGroundNumber} />
+            </div>
+            <div className="absolute w-[140rem] left-[25rem] h-[160rem] top-[-10rem]">
+              <img src={Number3} />
+            </div>
+            <p className="mt-[240rem] font-[700] text-[40rem] heading-[28rem] ml-[-120rem]">
+              We deliver. You enjoy.
+            </p>
+            <p className="w-[360rem] text-center ml-[-93rem] mt-[-20rem]">
+              Save yourself a trip to the store and enjoy tasty meals – how
+              delicious is that?
+            </p>
+          </div>
+        </div>
+      </div>
       <div>
-        <img className="h-[639rem] object-cover" src={Hero2} alt="logo"></img>
+        <p>Khám phá</p>
+        <p>Sản phẩm của chúng tôi</p>
+        <div>
+          <button>Tất cả</button>
+          <button>Rau củ</button>
+          <button>Trái cây</button>
+          <button>Hải sản</button>
+        </div>
       </div>
     </div>
   )
