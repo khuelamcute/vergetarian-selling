@@ -120,3 +120,8 @@ code {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+p {
+  margin: 0;
+  padding: 0;
+}
