@@ -2,9 +2,7 @@ import React from "react"
 
 const Login = React.lazy(() => import("../services/authen/pages/Login.js"))
 const SignUp = React.lazy(() => import("../services/authen/pages/SignUp.js"))
-const Search = React.lazy(() => import("../services//search/Search.js"))
 const Home = React.lazy(() => import("../services//shared/pages/Home.js"))
-const Test = React.lazy(() => import("../services//search/Test.js"))
 
 // Những route chỉ truy xuất khi chưa đăng nhập
 const publicRoute = [
@@ -17,10 +15,7 @@ const publicRoute = [
 const protectedRoute = [{ path: "/", name: "Home", element: <Home /> }]
 
 // route dùng cho mọi trường hợp
-const commonRoute = [
-  { path: "/search", name: "Search", element: <Search /> },
-  { path: "/test", name: "Test", element: <Test /> }
-]
+const commonRoute = []
 
 // Route dùng cho manager
 const managerRoute = []

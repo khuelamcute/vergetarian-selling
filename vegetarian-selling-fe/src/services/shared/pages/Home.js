@@ -7,6 +7,8 @@ import Hero from "../sections/Hero"
 import Step from "../sections/Step"
 import OurProduct from "../sections/OurProduct"
 import ProductContainer from "../sections/ProductContainer"
+import WhyToChoose from "../sections/WhyToChoose"
+import Ranking from "../sections/Ranking"
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <Step />
       <OurProduct />
       <ProductContainer />
+      <WhyToChoose />
+      <Ranking />
       <div className="pb-[120rem]"></div>
     </div>
   )

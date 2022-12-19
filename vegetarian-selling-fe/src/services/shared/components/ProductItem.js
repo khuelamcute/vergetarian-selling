@@ -14,7 +14,7 @@ export default function ProductItem() {
       <p className="font-[700] text-[#A1AB23] text-[32rem]">$ 23.4</p>
       <div className="bg-[#C9C9C9] h-[1rem] w-[100rem] ml-[96rem] mt-[-20rem]"></div>
       <p className="font-[700] mt-[10rem] hover:cursor-pointer">
-        ADD TO CART {">>"}
+        Thêm vào giỏ {">>"}
       </p>
     </div>
   )
