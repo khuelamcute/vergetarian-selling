@@ -9,6 +9,9 @@ import OurProduct from "../sections/OurProduct"
 import ProductContainer from "../sections/ProductContainer"
 import WhyToChoose from "../sections/WhyToChoose"
 import Ranking from "../sections/Ranking"
+import BannerBuyNow from "../sections/BannerBuyNow"
+import UserComplaint from "../sections/UserComplaint"
+import Footer from "../sections/Footer"
 
 export default function Home() {
   return (
@@ -20,7 +23,9 @@ export default function Home() {
       <ProductContainer />
       <WhyToChoose />
       <Ranking />
-      <div className="pb-[120rem]"></div>
+      <BannerBuyNow />
+      <UserComplaint />
+      <Footer />
     </div>
   )
 }

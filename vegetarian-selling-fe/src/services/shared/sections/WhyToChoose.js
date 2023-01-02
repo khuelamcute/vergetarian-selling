@@ -8,7 +8,7 @@ export default function WhyToChoose() {
       <Typography.Title level={2}>
         Những điều đặc biệt của chúng tôi
       </Typography.Title>
-      <img src={SpecialThings}></img>
+      <img src={SpecialThings} className="w-[100%]"></img>
     </div>
   )
 }
