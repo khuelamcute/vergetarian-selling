@@ -1,29 +1,16 @@
-import { Button, Dropdown, Input, Menu, Space, Select } from "antd"
 import React from "react"
+import { Button, Select, Input } from "antd"
 import { IoMdList } from "react-icons/io"
-import { DownOutlined, SmileOutlined } from "@ant-design/icons"
 const { Search } = Input
-export default function OurProduct() {
+export default function DetailProductHeader() {
   return (
-    <div className="mt-[128rem] text-center font-nunito">
-      <p className="font-[400] text-[24rem] mb-0">Khám phá</p>
-      <p className="text-[62rem] font-[700] font-lora mb-[12rem]">
+    <div className="text-center mt-[77rem]">
+      <p className="text-[#A1AB23]">Khám phá</p>
+      <p className="text-[44rem] font-[700] font-[Lora] mt-[-10rem]">
         Sản phẩm của chúng tôi
       </p>
-      {/* <div>
-        <button className="border-[1rem] px-[24rem] py-[8rem] mr-[32rem] bg-[#0A472E] text-[#fff] rounded-[80rem]">
-          Tất cả
-        </button>
-        <button className="px-[24rem] py-[8rem] mr-[32rem] text-[#042117]">
-          Rau củ
-        </button>
-        <button className="px-[24rem] py-[8rem] mr-[32rem] text-[#042117]">
-          Trái cây
-        </button>
-        <button className="px-[24rem] py-[8rem] mr-[32rem] text-[#042117]">
-          Hải sản
-        </button>
-      </div> */}
+      {/* Pagination */}
+
       <div className="flex justify-between items-center mx-[125rem]">
         <div>
           <Button
@@ -34,7 +21,7 @@ export default function OurProduct() {
               Mục lục
             </p>
             <Select
-              defaultValue="lucy"
+              defaultValue="all"
               style={{
                 width: 120
               }}
@@ -71,11 +58,6 @@ export default function OurProduct() {
             onSearch={() => {}}
             className="!w-[639rem] !h-[66rem]"
           />
-        </div>
-        <div>
-          <p className="text-[18rem] text-[#04211] cursor-pointer">
-            Xem tiếp {">>"}
-          </p>
         </div>
       </div>
     </div>

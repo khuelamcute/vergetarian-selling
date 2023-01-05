@@ -1,9 +1,16 @@
 import { Rate } from "antd"
 import React from "react"
+import { useNavigate } from "react-router-dom"
 
 export default function ProductItem() {
+  const navigate = useNavigate()
   return (
-    <div className="text-center w-[300rem] border-[1px]">
+    <div
+      className="text-center w-[300rem] border-[1px]"
+      onClick={() => {
+        navigate("/product-detail")
+      }}
+    >
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Lemon.jpg/1024px-Lemon.jpg"
         alt=""

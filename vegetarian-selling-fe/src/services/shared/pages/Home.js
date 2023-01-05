@@ -12,7 +12,7 @@ import Ranking from "../sections/Ranking"
 import BannerBuyNow from "../sections/BannerBuyNow"
 import UserComplaint from "../sections/UserComplaint"
 import Footer from "../sections/Footer"
-
+import Label from "../../../assets/img/label.png"
 export default function Home() {
   return (
     <div className="home-container">
@@ -25,6 +25,7 @@ export default function Home() {
       <Ranking />
       <BannerBuyNow />
       <UserComplaint />
+      <img src={Label} className="w-[100%]" />
       <Footer />
     </div>
   )

@@ -3,7 +3,9 @@ import { FiHeadphones } from "react-icons/fi"
 import { FaTwitter, FaFacebook, FaYoutube, FaInstagram } from "react-icons/fa"
 import { Input } from "antd"
 import Logo from "../../../assets/img/logo.png"
+import { useNavigate } from "react-router-dom"
 export default function Footer() {
+  const navigate = useNavigate()
   return (
     <div className="bg-[#0A472E] w-[100%]">
       <div className="pt-[80rem] flex justify-between">
@@ -72,7 +74,14 @@ export default function Footer() {
             <p className="text-[16rem]">TÀI KHOẢN CỦA TÔI</p>
             <p className="text-[#ADADAD]">Tài khoản của tôi</p>
             <p className="text-[#ADADAD]">Đánh giá của tôi</p>
-            <p className="text-[#ADADAD]">Yêu thích</p>
+            <p
+              className="text-[#ADADAD] cursor-pointer"
+              onClick={() => {
+                navigate("/loved-product")
+              }}
+            >
+              Yêu thích
+            </p>
             <p className="text-[#ADADAD]">Giỏ hàng</p>
           </div>
         </div>
